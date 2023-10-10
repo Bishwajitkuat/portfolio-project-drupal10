@@ -1,0 +1,4 @@
+name: portfolio_bishwajit_drupal10
+recipe: drupal10
+config:
+  webroot: web
