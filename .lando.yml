@@ -2,3 +2,18 @@ name: portfolio_bishwajit_drupal10
 recipe: drupal10
 config:
   webroot: web
+
+services:
+  phpmyadmin:
+    type: phpmyadmin
+    hosts: portfoliodb
+    depends_on:
+      - portfoliodb
+
+  portfoliodb:
+    type: mariadb
+    portforward: true
+    creds:
+      user: bisso
+      password: pass
+      database: portfolio_DB
