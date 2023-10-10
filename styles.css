@@ -1,0 +1,11 @@
+.aboutMe_contianer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+}
+
+.aboutMe_contianer img {
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+}
